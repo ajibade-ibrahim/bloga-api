@@ -19,8 +19,9 @@ namespace Bloga.Models
         public string Title { get; set; }
     }
 
-    public class BlogCreate : BlogBase
+    public class BlogUpsert : BlogBase
     {
+        public int BlogId { get; set; }
     }
 
     public class BlogPaging

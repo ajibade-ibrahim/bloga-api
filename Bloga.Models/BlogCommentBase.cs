@@ -14,7 +14,8 @@ namespace Bloga.Models
         public int? ParentBlogCommentId { get; set; }
     }
 
-    public class BlogCommentCreate : BlogCommentBase
+    public class BlogCommentUpsert : BlogCommentBase
     {
+        public int BlogCommentId { get; set; }
     }
 }
