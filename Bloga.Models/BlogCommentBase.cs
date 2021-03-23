@@ -13,4 +13,8 @@ namespace Bloga.Models
         public string Content { get; set; }
         public int? ParentBlogCommentId { get; set; }
     }
+
+    public class BlogCommentCreate : BlogCommentBase
+    {
+    }
 }

@@ -9,4 +9,8 @@
 
         public string PublicId { get; set; }
     }
+
+    public class PhotoCreate : PhotoBase
+    {
+    }
 }

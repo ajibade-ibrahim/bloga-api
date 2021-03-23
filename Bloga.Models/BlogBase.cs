@@ -19,10 +19,14 @@ namespace Bloga.Models
         public string Title { get; set; }
     }
 
+    public class BlogCreate : BlogBase
+    {
+    }
+
     public class BlogPaging
     {
-        public int PageSize { get; set; } = 6;
         public int Page { get; set; } = 1;
+        public int PageSize { get; set; } = 6;
     }
 
     public class PagedResults<T>
