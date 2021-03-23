@@ -15,6 +15,6 @@ namespace Bloga.Data.Repositories.Interfaces
         Task<List<Blog>> GetAllFamousAsync();
 
         Task<Blog> GetAsync(int blogId);
-        Task<Blog> UpsertAsync(BlogCreate blogCreate, int applicationUserId);
+        Task<Blog> UpsertAsync(BlogUpsert blogCreate, int applicationUserId);
     }
 }
